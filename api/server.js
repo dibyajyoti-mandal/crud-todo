@@ -8,8 +8,6 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect('mongodb+srv://dmandal:dmandal2104@cluster0.flbmuji.mongodb.net/?retryWrites=true&w=majority', {
-	useNewUrlParser: true, 
-	useUnifiedTopology: true 
 }).then(() => console.log("Connected to MongoDB")).catch(console.error);
 
 const Todo = require('./models/todo')
