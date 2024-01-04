@@ -31,3 +31,31 @@ body{
   text-decoration: underline;
 }
 
+.todos{
+  justify-content: center;
+}
+
+.todo{
+  color: whitesmoke;
+  background-color: #084521;
+  max-width: 1200px;
+  margin-bottom: 5px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: end; */
+
+}
+.deleteTodo{
+  background-color: #24c74f;
+  padding: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: none;
+
+}
+
+
+.deleteTodo:hover{
+  cursor: pointer;
+}

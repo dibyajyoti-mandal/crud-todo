@@ -8,8 +8,9 @@ function App() {
             <div className="todo">
                 <div className="check"></div>
                 <div className="text">task1</div>
-                <div className="deleteTodo">del</div>
+                <button className="deleteTodo">del</button>
             </div>
+            
         </div>
 
     </div>
