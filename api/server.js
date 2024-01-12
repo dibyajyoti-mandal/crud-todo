@@ -10,10 +10,11 @@ app.use(cors());
 (async()=> {
 	try {
 		await mongoose.connect('mongodb+srv://dmandal:dmandal2104@cluster0.flbmuji.mongodb.net/?retryWrites=true&w=majority', {
-		}).then(() => console.log("Connected to MongoDB"));
+		}).then(() => console.log(`Connected to MongoD`));
 	}
 	catch (err) {
 		console.log(err);
+		process.exit(1);
 	}
 })()
 
