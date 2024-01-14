@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const Todo = require('./models/todo')
 
 const app = express();
 
@@ -18,10 +19,6 @@ app.use(cors());
 	}
 })()
 
-// mongoose.connect('mongodb+srv://dmandal:dmandal2104@cluster0.flbmuji.mongodb.net/?retryWrites=true&w=majority', {
-// }).then(() => console.log("Connected to MongoDB")).catch(console.error);
-
-const Todo = require('./models/todo')
 
 app.get('/todos', async (req, res) => {
 	const todos = await Todo.find();
