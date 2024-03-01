@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Todo = require('./models/todo')
-
 const app = express();
 
 app.use(express.json());
@@ -11,7 +10,7 @@ app.use(cors());
 (async()=> {
 	try {
 		await mongoose.connect('mongodb+srv://dmandal:dmandal2104@cluster0.flbmuji.mongodb.net/?retryWrites=true&w=majority', {
-		}).then(() => console.log(`Connected to MongoD`));
+		}).then(() => console.log(`Connected to MongoDB`));
 	}
 	catch (err) {
 		console.log(err);
